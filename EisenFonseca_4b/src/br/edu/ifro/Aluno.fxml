@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.AlunoController">
-    
+<AnchorPane id="AnchorPane" prefHeight="188.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.AlunoController">
+   <children>
+      <Label layoutX="69.0" layoutY="68.0" text="Nome:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAluno" layoutX="69.0" layoutY="97.0" prefHeight="25.0" prefWidth="199.0" promptText="João">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="cadastrarAluno" layoutX="308.0" layoutY="65.0" onAction="#CadAluno" prefHeight="30.0" prefWidth="100.0" text="Cadastrar">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btcancelar" layoutX="308.0" layoutY="104.0" onAction="#Cancelar" prefHeight="30.0" prefWidth="100.0" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
 </AnchorPane>
